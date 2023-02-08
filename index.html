@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <title>Tobbo-man</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <h1>Météo de Tobbo</h1>
+    <div class="inputdiv">
+        <p>Insérer ci-dessous la latitude suivis de la longitude.</p>
+        <p>exemple : 48.8582,2.2942</p>
+        <a href="https://www.coordonnees-gps.fr/" target="_blank">coordonnees-gps.fr</a><br><br>
+        <input id="inputlatlon" class="inputlatlon" placeholder="1.234,5.678" type="coord">
+        <button class="btninput" onclick="setCoord()"><img class="arrowinput" src="https://cdn-icons-png.flaticon.com/512/271/271228.png"></button>
+    </div>
+    <table id="tableau" class="hidden">
+        <thead>
+            <tr>
+                <th colspan="2">Météo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="colg">Pays</td>
+                <td class="cold"><p id="country" class="country"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Région</td>
+                <td class="cold"><p id="region" class="region"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Ville</td>
+                <td class="cold"><p id="city" class="city"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Latitude</td>
+                <td class="cold"><p id="lat" class="lat"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Longitude</td>
+                <td class="cold"><p id="lon" class="lon"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">tz_id</td>
+                <td class="cold"><p id="tz_id" class="tz_id"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Date et heure actuel</td>
+                <td class="cold"><p id="localtime" class="localtime"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Dernière actualisation</td>
+                <td class="cold"><p id="last_updated" class="last_updated"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Temperature en C</td>
+                <td class="cold"><p id="temp_c" class="temp_c"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Temperature en F</td>
+                <td class="cold"><p id="temp_f" class="temp_f"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Humidité</td>
+                <td class="cold"><p id="humidity" class="humidity"></p></td>
+            </tr>
+            <tr>
+                <td class="colg">Image</td>
+                <td class="cold"><img id="weatherimg" class="weatherimg" src=""></td>
+            </tr>
+        </tbody>
+    </table>
+</html>
