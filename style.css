@@ -1,13 +1,14 @@
 body {
-    height: 100vh;
+    height: 95vh;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0e5ec;
 }
 table{
     border-collapse: collapse;
     min-width: 400px;
     width: auto;
-    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
-    /* cursor: pointer; */
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+    cursor: pointer;
     margin: 20px auto;
     border: 2px solid midnightblue;
 }
@@ -26,7 +27,7 @@ tbody, tr, td, th{
 }
 
 tbody tr:nth-child(even){
-    background-color: #f3f3f3;
+    background-color: #e7e7e7;
 }
 
 img{width: 75px;
@@ -47,10 +48,13 @@ img{width: 75px;
     border: 1px solid #fff;
     background-color: white;
     cursor: pointer;
+    transition: all 1s;
 }
 .btninput:hover{
     border: 1px solid black;
     transition: all 1s;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+    border-radius: 100px;
 }
 .inputdiv{
     text-align: center;
@@ -64,4 +68,16 @@ a{
 }
 .hidden{
     display: none;
+}
+
+.inputdiv p{
+    margin-top: 25px;
+}
+.inputdiv{
+    background-color: #e0e5ec;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 30%;
+    height: 180px;
+    margin: 20px auto;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
 }
